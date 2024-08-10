@@ -1,0 +1,43 @@
+.book_section {
+  & div {
+    border: 1px dotted red;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &:hover {
+      background-color: rgba(245, 245, 245, 0.562);
+    }
+    &:nth-child(even) {
+      background-color: rgb(181, 246, 255);
+    }
+    &:nth-child(odd) {
+      background-color: rgb(169, 255, 197);
+    }
+    & button:nth-child(1) {
+      display: flex;
+      margin-top: 10px;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      outline: 1px solid black;
+      border-radius: 5px;
+      color: red;
+      &:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+    & button:nth-child(2) {
+      display: inline-flex;
+      margin-top: 5px;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      outline: 1px solid black;
+      border-radius: 5px;
+      color: rgb(0, 0, 0);
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
